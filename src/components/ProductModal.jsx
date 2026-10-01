@@ -107,14 +107,14 @@ const ProductModal = ({ product, onClose }) => {
           >
             Dismiss
           </button>
-          <a
-            href="#cta-section"
+          <button
+            type="button"
             className="btn btn-teal modal-cta-action"
             onClick={onClose}
           >
             <span>Start Free Trial</span>
             <ArrowRight size={16} />
-          </a>
+          </button>
         </div>
       </div>
     </div>

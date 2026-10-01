@@ -36,7 +36,10 @@ const ProductCard = ({ product, onLearnMore }) => {
         type="button"
         className="product-learn-more-btn"
         style={{ color: product.themeColor }}
-        onClick={() => onLearnMore(product)}
+        onClick={(e) => {
+          e.preventDefault();
+          onLearnMore?.(product);
+        }}
       >
         <span>Learn More</span>
         <ArrowRight size={15} />
