@@ -13,12 +13,12 @@ const StatCard = ({ value, label, iconType }) => {
 
   return (
     <div className="stat-card">
-      <div className={`stat-icon-box stat-icon-${iconType}`}>
-        <IconComponent size={20} className="stat-svg-icon" />
+      <div className={`stat-icon-circle stat-icon-${iconType}`}>
+        <IconComponent size={20} />
       </div>
       <div className="stat-text-box">
-        <h3 className="stat-number">{value}</h3>
-        <p className="stat-label">{label}</p>
+        <div className="stat-number">{value}</div>
+        <div className="stat-label">{label}</div>
       </div>
     </div>
   );

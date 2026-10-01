@@ -50,14 +50,6 @@ export const statsData = [
   }
 ];
 
-export const productCategories = [
-  'All',
-  'Productivity',
-  'Collaboration',
-  'Analytics',
-  'Cloud'
-];
-
 export const productsData = [
   {
     id: 'project-flow',
@@ -67,8 +59,7 @@ export const productsData = [
     iconType: 'grid',
     iconColor: '#10b981',
     iconBg: '#ecfdf5',
-    badge: 'Popular',
-    pricing: '$12/mo',
+    themeColor: '#10b981',
     fullDescription: 'ProjectFlow delivers intuitive task scheduling, customizable agile boards, smart timeline Gantt charts, and resource management to keep distributed teams synchronized on critical milestones.',
     features: [
       'Interactive Kanban and sprint boards',
@@ -76,7 +67,8 @@ export const productsData = [
       'Resource capacity planning and workload distribution',
       'Two-way sync with GitHub, GitLab, and Jira'
     ],
-    rating: '4.9/5 (1.2k reviews)'
+    pricing: '$12/mo',
+    rating: '4.9/5'
   },
   {
     id: 'team-sync',
@@ -86,8 +78,7 @@ export const productsData = [
     iconType: 'users',
     iconColor: '#8b5cf6',
     iconBg: '#f5f3ff',
-    badge: 'Trending',
-    pricing: '$9/mo',
+    themeColor: '#8b5cf6',
     fullDescription: 'TeamSync bridges the distance for remote-first and hybrid organizations with high-definition audio/video huddles, interactive canvas whiteboards, and intelligent async status updates.',
     features: [
       'Crystal-clear HD video and spatial audio huddles',
@@ -95,7 +86,8 @@ export const productsData = [
       'Smart meeting summaries and automated action items',
       'End-to-end encrypted messaging channels'
     ],
-    rating: '4.8/5 (980 reviews)'
+    pricing: '$9/mo',
+    rating: '4.8/5'
   },
   {
     id: 'insight-pro',
@@ -105,8 +97,7 @@ export const productsData = [
     iconType: 'chart',
     iconColor: '#f59e0b',
     iconBg: '#fffbeb',
-    badge: 'Analytics',
-    pricing: '$24/mo',
+    themeColor: '#f59e0b',
     fullDescription: 'InsightPro connects data silos into coherent, interactive business intelligence dashboards with automated anomaly discovery, cohort retention metrics, and predictive forecasting.',
     features: [
       'Real-time streaming pipeline dashboards',
@@ -114,7 +105,8 @@ export const productsData = [
       'Visual query builder with instant SQL export',
       'Scheduled executive summaries via email and Slack'
     ],
-    rating: '4.9/5 (840 reviews)'
+    pricing: '$24/mo',
+    rating: '4.9/5'
   },
   {
     id: 'cloud-drive',
@@ -123,9 +115,8 @@ export const productsData = [
     category: 'Cloud',
     iconType: 'cloud',
     iconColor: '#0ea5e9',
-    iconBg: '#f0f9ff',
-    badge: 'Enterprise',
-    pricing: '$15/mo',
+    iconBg: '#eff6ff',
+    themeColor: '#0ea5e9',
     fullDescription: 'CloudDrive provides modern enterprise-grade cloud storage equipped with client-side zero-knowledge encryption, version control rollback, and high-speed multi-region global distribution.',
     features: [
       '256-bit AES client-side encryption and SOC2 compliance',
@@ -133,45 +124,8 @@ export const productsData = [
       'Granular permission tiers and password-protected sharing',
       'Direct command-line CLI and desktop virtual sync drive'
     ],
-    rating: '4.7/5 (2.1k reviews)'
-  },
-  {
-    id: 'task-pulse',
-    title: 'TaskPulse',
-    description: 'Automate repetitive workflows and accelerate team velocity.',
-    category: 'Productivity',
-    iconType: 'zap',
-    iconColor: '#059669',
-    iconBg: '#ecfdf5',
-    badge: 'Automation',
-    pricing: '$18/mo',
-    fullDescription: 'TaskPulse automates routine back-office operations and cross-tool notification flows with a visual drag-and-drop workflow canvas and pre-built triggers.',
-    features: [
-      'Over 250 pre-built connectors for popular tools',
-      'Visual decision branching with error recovery pipelines',
-      'Custom webhook listener and REST API triggers',
-      'Audit log inspection and latency monitors'
-    ],
-    rating: '4.8/5 (730 reviews)'
-  },
-  {
-    id: 'metric-guard',
-    title: 'MetricGuard',
-    description: 'Unified uptime monitoring and synthetic incident alerting.',
-    category: 'Cloud',
-    iconType: 'shield',
-    iconColor: '#6366f1',
-    iconBg: '#eef2ff',
-    badge: 'Monitoring',
-    pricing: '$29/mo',
-    fullDescription: 'MetricGuard monitors your web services and cloud infrastructure 24/7 across 30 global locations, notifying your on-call engineering team before outages impact customers.',
-    features: [
-      'Global multi-region synthetic ping and transaction probes',
-      'Instant SMS, PagerDuty, and phone call escalation trees',
-      'Public and private status page hosting with custom domains',
-      'SSL certificate expiration and DNS health tracking'
-    ],
-    rating: '4.9/5 (1.5k reviews)'
+    pricing: '$15/mo',
+    rating: '4.7/5'
   }
 ];
 
@@ -190,10 +144,10 @@ export const whyChooseUsData = {
   floatingCards: [
     {
       id: 'card-1',
-      title: 'Faster Performance',
-      subtitle: 'Optimized speed',
+      title: 'Faster',
+      subtitle: 'Performance',
       iconType: 'zap',
-      color: '#059669',
+      color: '#10b981',
       bg: '#ecfdf5'
     },
     {
@@ -206,11 +160,11 @@ export const whyChooseUsData = {
     },
     {
       id: 'card-3',
-      title: 'Dedicated Support',
-      subtitle: '24/7 round the clock',
+      title: 'Dedicated',
+      subtitle: 'Support',
       iconType: 'users',
       color: '#0ea5e9',
-      bg: '#f0f9ff'
+      bg: '#eff6ff'
     }
   ]
 };
